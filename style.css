@@ -1,0 +1,18 @@
+
+    	h1{
+    		text-align: center;
+    	}
+
+    	ul.nav li{
+        	display: inline-block;
+        	padding-right: 10px;
+         }
+
+        .carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+    	width: 80%;
+   		margin: auto;}
+
+   		.navigation{
+   			color: black;
+   		}
