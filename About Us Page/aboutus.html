@@ -2,90 +2,95 @@
 <html>
 <head>
   	<title>TITLE GOES HERE</title>
+ 	
+ 	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<link href='dist/css/main.css' rel='stylesheet'>
-  	<link href='../style.css' rel='stylesheet'> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  	<link href='../style.css' rel='stylesheet'>
+
+  	<!--<link href='bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>-->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<style>
-    	h1{
-    		text-align: center;
-    	}
 
-    	ul.nav li{
-        	display: inline-block;
-        	padding-right: 10px;
-         }
-
-        .navigation{
-   			color: black;
-   		}
-
-        .carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-    width: 80%;
-    margin: auto;}
-	</style>
 </head>
 
 <body>
+
 	<div class='jumbotron'>
 	
-	<h1> Mapping the Brain </h1>
-		
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    		<!-- Indicators -->
-    		<br>
-    		<ol class="carousel-indicators">
-      		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      		<li data-target="#myCarousel" data-slide-to="1"></li>
-      		<li data-target="#myCarousel" data-slide-to="2"></li>
-    		</ol>
+		<h1> Mapping the Brain </h1>
+		<br />
 
-    		<!-- Wrapper for slides -->
-    	<div class="carousel-inner" role="listbox">
 
-      		<div class="item active">
-        		<img src="../images/filler.jpeg" class='img-thumbnail' max-size='20cm' alt='brain picture 1' />
-      		</div>
+		<!-- CAROUSEL -->
 
-      		<div class="item">
-        		<img src="../images/brain1.jpg" class='img-thumbnail' max-size='20cm' alt='brain picture 1' />
-      		</div>
+		<div class='container'>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="../images/brain1.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <p>TEST</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="http://www.interactiveingredients.com/wp-content/uploads/brain.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <p>Test 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cerebral_lobes.png/300px-Cerebral_lobes.png" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <p>Brain 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
 
-      		<div class="item">
-        		<img src="../images/filler.jpeg" class='img-thumbnail' max-size='20cm' alt='brain picture 1' />
-      		</div>
-    	
-    	</div>
-
-    	<!-- Left and right controls -->
-    			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      				<span class="sr-only">Previous</span>
-    			</a>
-    			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      				<span class="sr-only">Next</span>
-    			</a>
-		
-		</div>
+      	<!-- NAVIGATION -->
 
 		<ul class='nav'>
-       		<li><button class='btn btn-lg'><a href="../index.html">Home</a></button></li>
-        	<li><button class='btn btn-lg'><a href="aboutus.html">
-        	       			<div class='navigation'>	About Us </div></a></button></li>
+       		<li><button class='btn btn-lg'>
+       			<a href="../index.html"> Home </a>
+       		</button></li>
         	<li><button class='btn btn-lg'>
-        	<a href="#more_information">More Information</a></button></li>
-        	<li><button class='btn btn-lg'><a href="#poll">Poll and Query Box</a></button></li>
+        		<a href="aboutus.html">
+        			<div class='navigation'> About Us </div>
+        		</a>
+        	</button></li>
+        	<li><button class='btn btn-lg'>
+        	<a href="../Find Out More page/findoutmore.html">More Information</a></button></li>
+        	<li><button class='btn btn-lg'><a href="../Contact Page/contact.html">Contact Us</a></button></li>
     	</ul>
-
 
     </div>
 
+
 	<div id='aboutus'>
 	
+	<div class='container'>
 		<div class='row'>
 		
 		<div class='col-sm-6'>
@@ -104,8 +109,10 @@
 		</div>
 		
 		</div>
-	
 	</div>
+	</div>
+
+	<!-- SOCIAL -->
 
 	<div id='social-buttons'>
       	
@@ -120,8 +127,15 @@
      	</button>
 
 	</div>
-	
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
+
+
 </body>
-
-
 </html>
+
